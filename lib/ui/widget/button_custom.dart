@@ -8,6 +8,7 @@ class FilledButtonCustom extends StatelessWidget {
   final double height;
   final String label;
   final Function onTap;
+  final double? roundSize;
 
 
   const FilledButtonCustom({
@@ -15,7 +16,8 @@ class FilledButtonCustom extends StatelessWidget {
     required this.width,
     required this.height,
     required this.label,
-    required this.onTap
+    this.roundSize,
+    required this.onTap, 
   });
 
   @override
@@ -30,7 +32,7 @@ class FilledButtonCustom extends StatelessWidget {
         style: TextButton.styleFrom(
           backgroundColor: greenColor,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: roundSize == null ? BorderRadius.circular(16) : BorderRadius.circular(roundSize!),
           ),
         ),
 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:teman_tani/shared/theme.dart';
 import 'package:teman_tani/ui/page/plant_detection_page.dart';
 import 'package:teman_tani/ui/page/plant_pick_page.dart';
+import 'package:teman_tani/ui/page/product_detail_page.dart';
 import 'package:teman_tani/ui/page/sign_in_page.dart';
 import 'package:teman_tani/ui/page/sign_up.dart';
 
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
           )
       ),
 
-      home: PlantDetectionPage(),
+      home: ProductDetailPage(),
     );
   }
 }
