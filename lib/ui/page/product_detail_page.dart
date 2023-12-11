@@ -17,7 +17,7 @@ class ProductDetailPage extends StatelessWidget {
       ),
 
       body: ListView(
-        padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 18),
+        padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 8),
 
         children: [
 
@@ -26,7 +26,7 @@ class ProductDetailPage extends StatelessWidget {
             'Gandum Segar',
             style: blackTextStyle.copyWith(
               fontSize: 24,
-              fontWeight: medium
+              fontWeight: bold
             ),
           ),
           // Product Name End
@@ -61,7 +61,7 @@ class ProductDetailPage extends StatelessWidget {
           // Product Image Start
           Container(
             width: double.infinity,
-            height: 300,
+            height: 240,
 
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
@@ -71,7 +71,7 @@ class ProductDetailPage extends StatelessWidget {
                   image: AssetImage('assets/gandum.png')
               ),
 
-              boxShadow: [
+              boxShadow: const [
                 const BoxShadow(
                   color: Color(0x3F000000),
                   blurRadius: 4,
@@ -108,7 +108,7 @@ class ProductDetailPage extends StatelessWidget {
           ),
           // Product Description End
 
-          const SizedBox(height: 40),
+          const SizedBox(height: 30),
 
           // Product Price & Pesan Button
           Row(

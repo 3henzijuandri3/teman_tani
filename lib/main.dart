@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:teman_tani/shared/theme.dart';
-import 'package:teman_tani/ui/page/plant_detection_page.dart';
-import 'package:teman_tani/ui/page/plant_pick_page.dart';
+import 'package:teman_tani/ui/page/all_product_page.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:teman_tani/ui/page/home.dart';
 import 'package:teman_tani/ui/page/product_detail_page.dart';
-import 'package:teman_tani/ui/page/sign_in_page.dart';
-import 'package:teman_tani/ui/page/sign_up.dart';
+import 'package:teman_tani/ui/page/profile_page.dart';
+import 'package:teman_tani/ui/page/upload_product_page.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -20,6 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           scaffoldBackgroundColor: lightBackgroundColor,
+
           appBarTheme: AppBarTheme(
             elevation: 0,
             centerTitle: true,
@@ -27,14 +30,15 @@ class MyApp extends StatelessWidget {
             iconTheme: IconThemeData(
               color: blackColor,
             ),
+
             titleTextStyle: blackTextStyle.copyWith(
                 fontSize: 20,
                 fontWeight: semiBold
             ),
-          )
+          ),
       ),
 
-      home: ProductDetailPage(),
+      home: UploadProductPage(),
     );
   }
 }
